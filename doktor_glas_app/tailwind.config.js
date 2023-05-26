@@ -7,6 +7,7 @@ export default {
       colors: {
         primary: "#00040f",
         secondary: "#00f6ff",
+        orange: "#FF6719",
         beige: "#F5F5DC",
         black: "#484847",
         dimWhite: "rgba(255, 255, 255, 0.7)",
