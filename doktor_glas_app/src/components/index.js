@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import Contact from "./Contact";
+import AboutUs from "./AboutUs";
 import Hero from "./Hero";
 import Info from "./Info";
 import Posts from "./Posts";
@@ -7,7 +7,7 @@ import Footer from "./Footer";
 
 export {
     Navbar,
-    Contact,
+    AboutUs,
     Hero,
     Info,
     Posts,

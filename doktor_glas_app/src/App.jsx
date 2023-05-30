@@ -1,5 +1,5 @@
 import styles from './style';
-import { Navbar } from './components';
+import { Navbar, Footer } from './components';
 
 const App = () => (
   <div className="bg-dimWhite w-full overflow-hidden">
@@ -17,10 +17,7 @@ const App = () => (
 
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        Posts
-        Info
-        Contact
-        Footer
+        <Footer />
       </div>
     </div>
   </div>
