@@ -1,5 +1,4 @@
 import React from 'react'
-import { utdrag } from '../constants'
 
 const Hero = () => {
   return (

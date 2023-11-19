@@ -1,15 +1,13 @@
 import Navbar from "./Navbar";
-import AboutUs from "./AboutUs";
-import Hero from "./Hero";
-import Info from "./Info";
-import Posts from "./Posts";
+import AboutUs from "../pages/AboutUs.jsx";
+import Hero from "../pages/Hero.jsx";
+import Posts from "../pages/Posts.tsx";
 import Footer from "./Footer";
 
 export {
     Navbar,
     AboutUs,
     Hero,
-    Info,
     Posts,
     Footer
 }
