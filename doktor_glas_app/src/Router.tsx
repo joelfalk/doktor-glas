@@ -1,26 +1,23 @@
-import {
-    createBrowserRouter,
-    RouterProvider
-} from "react-router-dom";
-import {AboutUs, Hero, Posts} from "/pages";
-import {Layout} from "./pages/Layout";
-
+import { createBrowserRouter } from 'react-router-dom';
+import { AboutUs, Hero, Posts, Layout } from './pages';
 
 export const router = createBrowserRouter([
-    {
-        element: <Layout/>,
-        children: [
-            {
-                path: "/info",
-                element: <AboutUs/>,
-            },
-            {
-                path: "/home",
-                element: <Hero/>
-            },
-            {
-                path: "/posts",
-                element: <Posts/>
-            }]
-    }
+  {
+    element: <Layout />,
+    children: [
+      {
+        index: true,
+        path: '/',
+        element: <Hero />
+      },
+      {
+        path: '/info',
+        element: <AboutUs />
+      },
+      {
+        path: '/posts',
+        element: <Posts />
+      }
+    ]
+  }
 ]);

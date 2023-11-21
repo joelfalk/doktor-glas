@@ -6,18 +6,27 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
-    "plugin:tailwindcss/recommended",
-    'plugin:@typescript-eslint/recommended'
+    'plugin:@typescript-eslint/recommended',
+    'prettier'
   ],
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   settings: { react: { version: '18.2' } },
-  plugins: ['react-refresh', '@typescript-eslint'],
+  plugins: ['react-refresh', '@typescript-eslint', 'prettier'],
   rules: {
-    'react-refresh/only-export-components': 'warn',
+    'prettier/prettier': [
+      'error',
+      {
+        singleQuote: true,
+        trailingComma: 'none',
+        arrowParens: 'avoid',
+        bracketSameLine: true,
+        useTabs: false,
+        tabWidth: 2
+      }
+    ],
+    'react-refresh/only-export-components': 'warn'
   },
   overrides: [
-    { files: ['*.ts', '*.tsx', '*.js'],
-    parser: '@typescript-eslint/parser'
-  },
+    { files: ['*.ts', '*.tsx', '*.js'], parser: '@typescript-eslint/parser' }
   ]
-}
+};
