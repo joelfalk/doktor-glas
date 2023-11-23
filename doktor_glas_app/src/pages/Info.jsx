@@ -1,9 +1,5 @@
-import React from 'react'
-
 const Info = () => {
-  return (
-    <div>Info</div>
-  )
-}
+  return <div>Info</div>;
+};
 
-export default Info
+export default Info;
